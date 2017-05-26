@@ -1,0 +1,36 @@
+{
+  "name": "simple-open-health-inspection-app",
+  "version": "0.1.0",
+  "description": "A server-side version of OHI.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wbprice/simple-open-health-inspection-app.git"
+  },
+  "keywords": [
+    "Code",
+    "for",
+    "America",
+    "Health",
+    "Inspections"
+  ],
+  "author": "Blaine Price",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wbprice/simple-open-health-inspection-app/issues"
+  },
+  "homepage": "https://github.com/wbprice/simple-open-health-inspection-app#readme",
+  "dependencies": {
+    "handlebars": "^4.0.10",
+    "hapi": "^16.1.1",
+    "inert": "^4.2.0",
+    "vision": "^4.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-trails": "^3.0.0"
+  }
+}
