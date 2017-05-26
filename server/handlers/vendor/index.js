@@ -1,7 +1,12 @@
 'use strict';
 
 function vendorHandler(request, reply) {
-    reply.view('vendor');
+    if (request.params.vendor) {
+        return reply.view('vendor', {
+            vendor: request.params.vendor
+        });
+    }
+    return reply.view('vendors');
 }
 
 module.exports = vendorHandler;

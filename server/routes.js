@@ -1,21 +1,17 @@
 'use strict';
 
-const homeHandler = require('./handlers/home/');
-const vendorHandler = require('./handlers/vendor/');
-const assetsHandler = require('./handlers/assets/');
-
 const routes = [{
     path: '/',
     method: 'GET',
-    handler: homeHandler
+    handler: require('./handlers/home/')
 }, {
-    path: '/vendor',
+    path: '/vendor/{vendor?}',
     method: 'GET',
-    handler: vendorHandler
+    handler: require('./handlers/vendor/')
 }, {
     path: '/assets/{file*}',
     method: 'GET',
-    handler: assetsHandler
+    handler: require('./handlers/assets')
 }];
 
 module.exports = routes;
